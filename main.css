@@ -7,6 +7,7 @@
     color: #000;
 }
 
+
 /* ################## HEADER ##################### */
 header{
     position: relative;
@@ -55,7 +56,7 @@ nav{
     width: 100%; height: 80px;
     border-bottom: 1px solid #ededed;
     background-color: #fff;
-    z-index: 1;
+    z-index: 2;
 }
 
 nav .logo_img2{
@@ -184,6 +185,9 @@ nav .search_area input{
     border: 1px solid #ededed;
     font-size: 16px; color: #999;
 }
+nav .search_area input:focus{
+    outline: none;
+}
 
 nav .search_area img{
     position: absolute;
@@ -219,14 +223,135 @@ nav > .inner_wrap{
     font-size: 24px;
 }
 
+/* ################## BANNER ##################### */
+/* banner btn */
+.banner_btn{
+    position: absolute;
+    top: 320px; right: 0;
+    width: 65px; height: 40px;
+    background-color: #666;
+    border-radius: 50px 0 0 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+.banner_btn span{
+    display: block;
+    margin: 0 auto;
+    width: 20px; height: 2px;
+    background-color: #ededed;
+    position: absolute;
+    right: 20px; 
+    transition: 0.3s;
+}
+.banner_btn span:nth-child(1){
+    top: 11px;
+}
+.banner_btn span:nth-child(2){
+    top: 18px;
+}
+.banner_btn span:nth-child(3){
+    top: 25px;
+}
+
+.banner_btn.active span:nth-child(1){
+    top: 50%;
+    transform: rotate(45deg);
+}
+.banner_btn.active span:nth-child(2){
+    display: none;
+}
+.banner_btn.active span:nth-child(3){
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+/* banner content */
+.banner_cnt{
+    position: absolute;
+    top: 350px; right: -300px;
+    transition: 0.8s;
+}
+.banner_cnt.active{
+    right: 0;
+}
+
+.banner_cnt img{
+    width: 300px; height: 200px;
+}
+
+.banner_content{
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: -5px;
+}
+.banner_content h4{
+    font-size: 20px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.banner_content p{
+    font-size: 13px;
+    margin: 10px 0;
+    color: #333;
+}
+.banner_content span{
+    display: inline-block;
+    margin: 10px 0;
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #989181;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
 
 /* ################## main text0 ##################### */
 .main_text0{
     width: 100%; height: 600px;
-    background-image: url(images/lotte_bg.jpeg);
+}
 
-    background-repeat: no-repeat;
-    background-size: cover;
+/* SLIDER */
+.slide_cnt{
+    width: 100%; height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    width: 100%; height: 100%;
+
+    position: relative;
+}
+.slide_item{
+    width: 1440px; height: 100%;
+
+    position: absolute;
+    top: 0; left: 0;
+}
+.slide_item img{
+    width: 100%; height: 100%;
+}
+
+/* CONTROLLER */
+.controller{
+    position: absolute;
+    bottom: 20px; left: 50%;
+    transform: translateX(-50%);
+}
+.slide_btn{
+    display: inline-block;
+    width: 50px; height: 2px;
+    background-color: #999;
+    margin-right: -5px;
+
+    transition: 0.5s;
+}
+.slide_btn.active{
+    background-color: #ededed;
 }
 
 
