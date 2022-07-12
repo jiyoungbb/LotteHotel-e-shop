@@ -58,6 +58,10 @@ nav{
     background-color: #fff;
     z-index: 2;
 }
+nav .inner_wrap{
+    background-color: #fff;
+    width: 100%;
+}
 
 nav .logo_img2{
     width: 196px; height: 100%;
@@ -327,7 +331,7 @@ nav > .inner_wrap{
     position: relative;
 }
 .slide_item{
-    width: 1440px; height: 100%;
+    width: 100%; height: 100%;
 
     position: absolute;
     top: 0; left: 0;
@@ -357,12 +361,16 @@ nav > .inner_wrap{
 
 /* ################## main text1 ##################### */
 .main_text1{
-    width: 100%; height: 1300px;
+    width: 100%; 
+    /* height: 1300px; */
+    overflow: hidden;
     margin-top: 130px;
 }
 
 .main_text1 > .inner_wrap{
-    width: 1400px; height: 100%;
+    /* width: 1400px; */
+    width: 97%;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -379,7 +387,8 @@ nav > .inner_wrap{
 
 .main_text1 ul > li{
     display: inline-block;
-    width: 448px; height: 600px;
+    width: 448px; 
+    height: 600px;
     margin-right: 22px;
 }
 
