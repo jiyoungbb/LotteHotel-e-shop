@@ -368,10 +368,10 @@ nav > .inner_wrap{
 }
 
 .main_text1 > .inner_wrap{
-    /* width: 1400px; */
     width: 97%;
     height: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .main_text1 h2{
@@ -387,7 +387,7 @@ nav > .inner_wrap{
 
 .main_text1 ul > li{
     display: inline-block;
-    width: 448px; 
+    width: 32%;
     height: 600px;
     margin-right: 22px;
 }
@@ -402,7 +402,7 @@ nav > .inner_wrap{
 }
 
 .main_text1 ul li img{
-    width: 448px; height: 448px;
+    width: 100%; height: 448px;
     transition: 0.3s;
 }
 
@@ -552,9 +552,9 @@ footer{
 }
 
 footer > .inner_wrap{
-    width: 1330px; height: 100%;
+    width: 100%; height: 100%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 50px 40px 0 40px;
     box-sizing: border-box;
 }
 
